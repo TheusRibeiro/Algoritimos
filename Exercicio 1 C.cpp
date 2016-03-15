@@ -160,7 +160,6 @@ void convertermin(char *texto){
 	 
  }
  
- 
  void subs(char *texto){
  	char x;
  	char y;
@@ -189,8 +188,6 @@ void convertermin(char *texto){
 	    while(texto[i]!='\0'){
 	        i++;
 		  	
-			    
-			
 		}
 		return i;
 	}
@@ -198,16 +195,13 @@ void convertermin(char *texto){
 	void inver(char *texto){
 		char inv[50];
 	
-
-		
+	
 		for(int i=0;;i++){
 			if(texto[i]=='\0'){
 				
                 for(int j=i-1,k=0;j>=0;j--,k++){
                 	inv[k]=texto[j];
-                	
-                	
-                	
+               
 				}	
 			    inv[i]='\0';
 				    for(int t=0;t<=i;t++){
@@ -223,14 +217,4 @@ void convertermin(char *texto){
 		getchar();
 				
 			
-			}
-		
-		
-			
-			
-	
-			
-		
-			
-   	  
-   
+	}
