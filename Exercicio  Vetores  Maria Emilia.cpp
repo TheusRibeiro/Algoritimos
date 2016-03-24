@@ -8,7 +8,6 @@ struct estrutura{
 
 }num;
 
-
 void cadastrar_vetor(int *p){
 
 	int i;
@@ -37,8 +36,8 @@ void visualisar_vetor(int *p){
 
 	}
     cout << "Pressione Enter para voltar...";
-	getchar();getchar();
-	system("cls || clear");
+	getchar();getchar();// Usei dois getchar para pausar porque o linux nao tem o comando System("pause") 
+	system("cls || clear");// Comando para limpar tela
 	return;
 
 }
@@ -147,17 +146,17 @@ int main(){
 
 	do{
 	cout << "\n ------- MENU - Escolha uma opcao -------\n";
-	cout << "\n 1- Receber um conjunto de números inteiros";
+	cout << "\n 1- Receber um conjunto de numeros inteiros";
 	cout << "\n 2- Visualizar os valores do vetor";
 	cout << "\n 3- Substituir numero de um vetor";
-	cout << "\n 4- Visualizar números primos";
-	cout << "\n 5- Procurar números iguais";
+	cout << "\n 4- Visualizar numeros primos";
+	cout << "\n 5- Procurar numeros iguais";
 	cout << "\n 6- Classificar em ordem crescente";
 	cout << "\n 7- Sair do programa";
 	cout << "\n\n Digite uma opcao: ";
 	cin >> op;
 
-	switch (op){ // Menu que chama as funcoes
+	switch (op){ // Menu vetor
 
 		case 1:
 			system("cls || clear");
@@ -193,9 +192,9 @@ int main(){
             cin >> aux;
 			qqt = iguais(pont,aux);
 
-			if(qqt == 0){
+			if(qqt == 1 || qqt==0){
 			cout << "\n --------------------------------";
-			cout << "\n NAO HA NUMEROS REPITIDOS ...";
+			cout << "\n NAO HA REPETICOES ...";
 			cout << "\n --------------------------------\n";
             cout << "\nPressione Enter para voltar...";
             getchar();getchar();
@@ -219,13 +218,13 @@ int main(){
             system("cls || clear");
 			break;
 		case 7:
-			return 0;
+			exit(1);
 		// terminar de fazer o menu switch
 	}
 
 }while( op !=7);
 
-	return 0;
+	return 0; // qualquer coisa ele encerra o programa
 }
 
 
