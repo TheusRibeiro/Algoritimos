@@ -11,9 +11,7 @@ struct estrutura{
 void cadastrar_vetor(int *p){
 
 	int i;
-	cout <<"\n*************************************************";
-	cout <<"\n************ CADASTRE OS VETORES ****************";
-	cout <<"\n*************************************************\n\n";
+
 	for( i=0; i<10 ; i++){
 		cout << " Vetor [" << i << "]: ";
 		cin >> p[i];
@@ -25,10 +23,6 @@ return;
 
 void visualisar_vetor(int *p){
 	int i;
-
-	cout << "\n**************************************************";
-	cout << "\n************* VISUALIZAR VETORES *****************";
-	cout << "\n**************************************************\n\n";
 
 	for( i=0; i<10 ; i++){
 
@@ -42,16 +36,10 @@ void visualisar_vetor(int *p){
 
 }
 
-int trocar_numero(int *p){
+int trocar_numero(int *p, int a){
 
-	int i, a, cont;
+	int i,  cont;
 	cont =0;
-	cout <<"\n*************************************************";
-	cout <<"\n************ TROCAR NUMERO VETOR ****************";
-	cout <<"\n*************************************************\n\n";
-
-	cout << "\n Digite o numero do vetor que deseja trocar: ";
-	cin >> a;
 
 	if(a < 10){
 		cout << "\n Digite o numero a trocar do vetor [" << a <<"]: ";
@@ -67,10 +55,6 @@ int trocar_numero(int *p){
 
 void numeros_primos(int *p){
 	int num, i, j, cont, num_cont;
-
-  	cout <<"\n*************************************************";
-	cout <<"\n************ NUMEROS PRIMOS ****************";
-	cout <<"\n*************************************************\n\n";
 
   for(j=0;j<10;j++){
 
@@ -140,7 +124,7 @@ int iguais(int *p, int aux){
 }
 
 int main(){
-	int op;
+	int op,tv;
 	int *pont =num.num;
 	int qqt, aux, aux1;
 
@@ -160,16 +144,27 @@ int main(){
 
 		case 1:
 			system("cls || clear");
+			cout <<"\n*************************************************";
+			cout <<"\n************ CADASTRE OS VETORES ****************";
+			cout <<"\n*************************************************\n\n";
 			cadastrar_vetor(pont);
 			break;
 		case 2:
 			system("cls || clear");
+			cout << "\n**************************************************";
+			cout << "\n************* VISUALIZAR VETORES *****************";
+			cout << "\n**************************************************\n\n";
 			visualisar_vetor(pont);
 			break;
 		case 3:
 			system("cls || clear");
 			int nt;
-			nt = trocar_numero(pont);
+			cout <<"\n*************************************************";
+			cout <<"\n************ TROCAR NUMERO VETOR ****************";
+			cout <<"\n*************************************************\n\n";
+			cout << "\n Digite o numero do vetor que deseja trocar: ";
+			cin >> tv;
+			nt = trocar_numero(pont,tv);
 			aux1 = aux1 + nt;
 			cout << "\n --------------------------------";
 			cout << "\n Numero de trocas: " << aux1;
@@ -180,6 +175,9 @@ int main(){
 			break;
 		case 4:
 			system("cls || clear");
+			cout <<"\n*************************************************";
+			cout <<"\n************ NUMEROS PRIMOS ****************";
+			cout <<"\n*************************************************\n\n";
 			numeros_primos(pont);
 
 			break;
