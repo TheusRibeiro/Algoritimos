@@ -5,7 +5,7 @@ int main(){
 	float NH,SALARIO;
 	
 	scanf("%d %d %f",&N,&GH,&NH);	
-		SALARIO=GH*NH;
+	SALARIO=GH*NH;
 		
 	printf("NUMBER = %d\n",N);
 	printf("SALARY = U$ %.2f\n",SALARIO);
