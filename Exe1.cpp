@@ -9,8 +9,6 @@ int main(){
   printf("Digite o segundo valor: ");
   scanf("%d", &b);
   printf("O resultado da soma é: %d\n", a+b);
-
-  system("pause");
   
   return 0;
 }
