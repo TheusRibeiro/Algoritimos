@@ -76,7 +76,7 @@ char remover(){
 	qtde --; // Um item a menos na fila
 	if (inicio == 5){
 		inicio = 0;
-	} else { // Posiciona inicio na primeira posição
+	} else { // Posiciona inicio na primeira posiÃ§Ã£o
 		inicio++;
 	} // Posiciona inicio na proxima posicao
 	return ch; // Retorna o caratere removido
@@ -98,10 +98,9 @@ void pesquisar(){
 			cout << "\nEste caractere esta na posicao: " << i << endl << endl;
 			achou++;
 		}
-
 	}
 	if (achou == 0){
-		cout << "\nEste caractere não existe na fila." << endl << endl;
+		cout << "\nEste caractere nÃ£o existe na fila." << endl << endl;
 	}
 }
 
