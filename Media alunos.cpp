@@ -16,7 +16,6 @@ int main(){
 	printf("\n Digite a segunda nota: ");
 	scanf("%f", &snpb);
 	
-	
 	mpb = (pnpb * 0,3) + (snpb * 0,7);
 	
 	if(mpb >=7){
@@ -43,13 +42,13 @@ int main(){
 	notafinal = (mpb + msb)/2;
 	
 	system("cls");
-		
+	
 	if(notafinal >= 7){
-	
-	printf("------------------------------------------------------------\n");
-	printf("\t\t ------ NOTA FINAL ------");
-	printf("\n------------------------------------------------------------\n\n");
-	
+		
+		printf("------------------------------------------------------------\n");
+		printf("\t\t ------ NOTA FINAL ------");
+		printf("\n------------------------------------------------------------\n\n");
+		
 		printf("\n----------------------------------------------");
 		printf("\n Parabens vc foi aprovado com Media: %f", notafinal);
 		printf("\n----------------------------------------------\n\n");
@@ -57,10 +56,7 @@ int main(){
 	}else{
 		printf("\n----------------------------------------------");
 		printf("\n Voce nao conseguiu ser aprovado, Media: %f", notafinal);
-		printf("\n----------------------------------------------\n\n");
-		
+		printf("\n----------------------------------------------\n\n");	
 	}
-
-	
 	return 0;
 }
