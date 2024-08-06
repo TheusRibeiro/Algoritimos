@@ -25,7 +25,6 @@ int main(){
 		
 	}
 
-	
 	cout<<"IMPARES : ";
 	
 	for(int i = 0;i < mImp;i++){   
