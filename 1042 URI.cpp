@@ -18,7 +18,7 @@ int main(){
 		}
 	}
  
-printf("%d\n%d\n%d\n\n%d\n%d\n%d",vetor[0],vetor[1],vetor[2],num1,num2,num3);
+	printf("%d\n%d\n%d\n\n%d\n%d\n%d",vetor[0],vetor[1],vetor[2],num1,num2,num3);
 	
 	return 0;
 }

@@ -9,5 +9,5 @@ int main(){
 	total=(valor*np)+(valor2*np2);
 	printf("VALOR A PAGAR: R$ %.2f\n",total);
 	
-return 0;	
+	return 0;	
 }

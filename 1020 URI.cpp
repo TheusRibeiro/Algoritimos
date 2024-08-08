@@ -1,6 +1,8 @@
 #include <stdio.h>
-int main () {
+
+int main(){
     int i, a, m, d;
+
     scanf ("%d", &i);
     a=i/365;
     m=(i-(a*365))/30;

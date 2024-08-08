@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main () {
+int main(){
    float veloc, tempo, litros;
    scanf("%f%f", &tempo,&veloc);
    litros=(tempo*veloc)/12;

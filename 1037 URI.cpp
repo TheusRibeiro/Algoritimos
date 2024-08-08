@@ -14,5 +14,6 @@ int main(void){
         printf("Intervalo (75,100]\n");
     else
         printf("Fora de intervalo\n");
+    
     return 0;
 }

@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main() {
+int main(){
     double x, y;
     scanf("%lf%lf",&x,&y);
         if (x>0 && y>0)

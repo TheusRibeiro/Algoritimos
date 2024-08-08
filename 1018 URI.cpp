@@ -1,4 +1,5 @@
 #include<stdio.h>
+
 int main(void){
     long int valor,aux, nota_100,nota_50,nota_20,nota_10,nota_5,nota_2;
     scanf("%ld",&valor);
